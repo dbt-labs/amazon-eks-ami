@@ -1,11 +1,11 @@
 {
   "variables": {
-    "aws_region": "us-west-2",
+    "aws_region": "us-east-1",
     "build_tag": "",
     "ami_name": "bionic-eks-node",
     "binary_bucket_name": "amazon-eks",
-    "binary_bucket_region": "us-west-2",
-    "binary_bucket_path": "1.10.3/2018-07-26/bin/linux/amd64",
+    "binary_bucket_region": "us-east-1",
+    "binary_bucket_path": "1.10.11/2018-12-06/bin/linux/amd64",
     "creator": "{{env `USER`}}",
     "instance_type": "m4.large",
     "source_ami_id": "",

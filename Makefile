@@ -2,6 +2,7 @@ BUILD_TAG := $(or $(BUILD_TAG), $(shell date +%s))
 KUBERNETES_VERSION ?= 1.10.3
 
 DATE ?= $(shell date +%Y-%m-%d)
+AWS_DEFAULT_REGION = us-east-1
 
 SOURCE_AMI_ID ?= $(shell aws ec2 describe-images \
 	--output text \
@@ -13,8 +14,6 @@ SOURCE_AMI_ID ?= $(shell aws ec2 describe-images \
 		Name=architecture,Values=x86_64 \
 		Name=state,Values=available \
 	--query 'max_by(Images[], &CreationDate).ImageId')
-
-AWS_DEFAULT_REGION = us-west-2
 
 .PHONY: all validate ami
 
