@@ -1,3 +1,5 @@
+NOTE: Forked from [https://github.com/AdvMicrogrid/amazon-eks-ami](https://github.com/AdvMicrogrid/amazon-eks-ami)!
+
 # Amazon EKS AMI Build Specification
 
 This repository contains resources and configuration scripts for building a
