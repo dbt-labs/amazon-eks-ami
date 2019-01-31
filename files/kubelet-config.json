@@ -22,9 +22,12 @@
     }
   },
   "clusterDomain": "cluster.local",
+  "hairpinMode": "hairpin-veth",
   "cgroupDriver": "cgroupfs",
+  "cgroupRoot": "/",
   "featureGates": {
     "RotateKubeletServerCertificate": true
   },
+  "serializeImagePulls": false,
   "serverTLSBootstrap": true
 }
