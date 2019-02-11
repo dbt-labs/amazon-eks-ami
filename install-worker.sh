@@ -50,7 +50,7 @@ sudo systemctl enable iptables-restore
 ### Docker #####################################################################
 ################################################################################
 
-sudo apt-get install -y --no-install-recommends docker.io=17.12.1-0ubuntu1
+sudo apt-get install -y --no-install-recommends docker.io=18.06.1-0ubuntu1.2~18.04.1
 sudo usermod -aG docker $USER
 
 sudo mkdir -p /etc/docker
